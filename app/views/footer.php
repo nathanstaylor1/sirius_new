@@ -3,13 +3,13 @@
 		<div class="row">
 		  <div class="col-md-12">
 			  <ul id = "site-map"class = "text-center">
-			  	<a href="index.php"><li >Home</li></a>
-		        <a href="index.php"><li >About</li></a>
-		        <a href="index.php"><li >Individuals</li></a>
-		        <a href="index.php"><li >Companies</li></a>
-		        <a href="index.php"><li >Boards</li></a>
-		        <a href="index.php"><li >Resources</li></a>
-		        <a href="index.php"><li >Contact</li></a>
+			  	<a href="<?php echo site_url() ?>"><li >Home</li></a>
+		        <a href="<?php echo site_url() ?>about/"><li >About</li></a>
+		        <a href="<?php echo site_url() ?>individuals/"><li >Individuals</li></a>
+		        <a href="<?php echo site_url() ?>companies/"><li >Companies</li></a>
+		        <a href="<?php echo site_url() ?>boards/"><li >Boards</li></a>
+		        <a href="<?php echo site_url() ?>resources/"><li >Resources</li></a>
+		        <a href="<?php echo site_url() ?>contact/"><li >Contact</li></a>
 			  </ul>
 		  </div>
 		</div>
