@@ -7,13 +7,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" user-scalable="no" />
 
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,900,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
-    <link rel="stylesheet/less" type="text/css" href='<?php echo site_url() ?>assets/css/style.less'/>
-
+    <link rel="stylesheet" type="text/css" href='<?php echo site_url() ?>assets/css/style.css'/>
 	<link rel="shortcut icon" href="<?php echo site_url() ?>assets/media/favicon/favicon.ico" type="image/x-icon"/>
 
-
-    <script type='text/javascript' src='<?php echo site_url() ?>assets/js/less.min.js'></script>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script type='text/javascript' src='<?php echo site_url() ?>assets/js/script.js'></script>

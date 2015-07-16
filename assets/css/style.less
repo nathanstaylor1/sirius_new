@@ -40,7 +40,7 @@ body  * {
   //font stacks:
 
   @readingFont: Tahoma, Geneva, sans-serif ;
-  @headingFont: "Trebuchet MS", Helvetica, sans-serif;
+  @headingFont: "Gill Sans", 'Lato', Helvetica, sans-serif;
 
   //footer
   @footerHeight: 160px;
@@ -185,7 +185,7 @@ a {
     }
     .navbar-brand,  .navbar-nav > li > a , .dropdown-menu > li > a{
       color: #0B257A;
-      font-family: "Gill Sans";
+      font-family: @headingFont;
       font-variant: small-caps;
       font-size: 20px;
         &:hover{
@@ -210,7 +210,7 @@ a {
   background-color: #0A2163;
   color: #EFEFED;
   text-align: center;
-  font-family: "Gill Sans";
+  font-family: @headingFont;
   border-top: @border;
   font-size: 18px;
   font-weight: lighter;
@@ -320,7 +320,7 @@ color: white;
 .jumbotron {
   background-color: #EFEFED;
   color: #0B257A;
-  font-family: "Gill Sans";
+  font-family: @headingFont;
   padding: 2vh 5vw 2vh 5vw;
 
     &.dark {
