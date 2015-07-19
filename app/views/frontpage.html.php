@@ -84,7 +84,7 @@
                 </a>
               </div>
             </div>
-            <h6> Who is Sirius Business? <a href = "about.php">Learn More</a></h6>
+            <h6> Who is Sirius Business? <a href = "<?php echo site_url() ?>about">Learn More</a></h6>
           </div>
         </div>
       </div>
