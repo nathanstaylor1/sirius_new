@@ -229,7 +229,7 @@ a {
   font-family: "Gill Sans", 'Lato', Helvetica, sans-serif;
   border-top: 1px solid #0a2163;
   font-size: 18px;
-  font-weight: lighter;
+  font-weight: 300;
 }
 .footer #site-map li {
   display: inline-block;
@@ -299,6 +299,7 @@ a {
 }
 .slab {
   line-height: 2em;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 h3 {
   font-family: "Gill Sans", 'Lato', Helvetica, sans-serif;
@@ -309,7 +310,7 @@ h3:nth-of-type(2) {
   margin-top: 30px;
 }
 #slider-holder {
-  position: relative;
+  position: absolute;
   top: 3%;
   left: 15%;
   width: 80%;
@@ -446,6 +447,12 @@ h3:nth-of-type(2) {
   border-radius: 20px;
   width: 90%;
 }
+.page.about .fa-quote-left,
+.page.about .fa-quote-right {
+  color: #a4d2f4;
+  font-size: 2em;
+  line-height: 3em;
+}
 .page.about #testimonials .carousel-caption {
   position: static;
   padding: 20px;
@@ -458,10 +465,13 @@ h3:nth-of-type(2) {
   margin-bottom: 10px;
   border-radius: 10px;
   font-style: italic;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.8em;
 }
 .page.about #testimonials .carousel-caption .person {
   color: #0a2163;
   text-shadow: none;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 /* resources page
   --------------------------------------------- */

@@ -39,7 +39,7 @@ body  * {
 
   //font stacks:
 
-  @readingFont: Tahoma, Geneva, sans-serif ;
+  @readingFont: 'Source Sans Pro', sans-serif;
   @headingFont: "Gill Sans", 'Lato', Helvetica, sans-serif;
 
   //footer
@@ -213,7 +213,7 @@ a {
   font-family: @headingFont;
   border-top: @border;
   font-size: 18px;
-  font-weight: lighter;
+  font-weight: 300;
 
     #site-map li{
       display: inline-block;
@@ -294,6 +294,7 @@ a {
 
 .slab{
   line-height: 2em;
+  font-family: @readingFont;
 
 }
 
@@ -307,7 +308,7 @@ h3{
 }
 
 #slider-holder{
-  position: relative;
+  position: absolute;
   overflow: hidden;
   top: 3%;
   left: 15%;
@@ -474,6 +475,13 @@ color: white;
     width: 90%;
   }
 
+  .fa-quote-left, .fa-quote-right{
+    color: @lightblue;
+    font-size: 2em;
+    line-height: 3em;
+  }
+
+
   #testimonials{
     .item{
 
@@ -490,10 +498,13 @@ color: white;
           margin-bottom: 10px;
           border-radius: 10px;
           font-style: italic;
+          font-family: @readingFont;
+          line-height: 1.8em;
         }
         .person {
           color: @navy;
           text-shadow: none;
+          font-family: @readingFont;
         }
     }
   }

@@ -35,7 +35,10 @@
 	</div>
 
 	<div class = "row">
-		<div class = "col-md-12">		 
+		<div class = "col-md-1">
+			<i class="fa fa-quote-left"></i>
+		</div>
+		<div class = "col-md-10">		 
 			<div id="testimonials" class="carousel slide">
 				<div class="carousel-inner">
 
@@ -83,6 +86,9 @@
 
 				</div>
 			</div>	
+		</div>
+		<div class = "col-md-1 pull-right">
+			<i class="fa fa-quote-right"></i>
 		</div>
 
 	</div>
