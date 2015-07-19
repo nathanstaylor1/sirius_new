@@ -7,6 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" user-scalable="no" />
 
+	<link rel="stylesheet" href="<?php echo site_url() ?>assets/media/fonts/font-awesome/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,900,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href='<?php echo site_url() ?>assets/css/style.css'/>

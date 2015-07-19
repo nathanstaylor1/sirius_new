@@ -1,6 +1,6 @@
 <div class = "container page">
 	<h3> Resources </h3>
-	<p> Here are some files for you.... </p>
+	<p> Want to explore further? Here are some resources to get you started. </p>
 
 	<ul id = "file-list">
 		<li>

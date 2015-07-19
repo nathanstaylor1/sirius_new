@@ -262,6 +262,7 @@ a {
 }
 .img-holder{
   padding: 15px;
+  overflow: hidden;
   img{
     margin: auto;
   }
@@ -286,6 +287,55 @@ a {
       flex: 3;
     }
 }
+
+.just {
+  text-align: justify;
+}
+
+.slab{
+  line-height: 2em;
+
+}
+
+h3{
+  font-family: @headingFont;
+  color: @navy;
+  margin-bottom: 20px;
+  &:nth-of-type(2){
+    margin-top: 30px;
+  }
+}
+
+#slider-holder{
+  position: relative;
+  overflow: hidden;
+  top: 3%;
+  left: 15%;
+  width: 80%;
+  height: 95%;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: auto;
+
+}
+
+#slider{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%
+}
+
+
+  //icons
+
+  .fa-linkedin {
+    background-color: #0077B5;
+    color: @white;
+    padding: 3px;
+    border-radius: 2px;
+    vertical-align: text-bottom;
+  }
 
 
   /* front page
@@ -413,12 +463,42 @@ color: white;
 
   /* about page
   --------------------------------------------- */
-#portrait{
-  border-radius: 20px;
-  width: 70%;
+
+.page.about{
+
+  .row div:first-of-type{
+  }
+
+  #portrait{
+    border-radius: 20px;
+    width: 90%;
+  }
+
+  #testimonials{
+    .item{
+
+    }
+
+    .carousel-caption{
+        position:static;
+        padding: 20px;
+        opacity: 0.7;
+        .quote {
+          padding: 10px 20px 10px 20px;
+          background-color: @navy;
+          color: @white; 
+          margin-bottom: 10px;
+          border-radius: 10px;
+          font-style: italic;
+        }
+        .person {
+          color: @navy;
+          text-shadow: none;
+        }
+    }
+  }
+
 }
-
-
   /* resources page
   --------------------------------------------- */
 #file-list{

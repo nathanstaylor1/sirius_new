@@ -270,6 +270,7 @@ a {
 }
 .img-holder {
   padding: 15px;
+  overflow: hidden;
 }
 .img-holder img {
   margin: auto;
@@ -292,6 +293,43 @@ a {
 .flexbox .flex3 {
   -webkit-flex: 3;
   flex: 3;
+}
+.just {
+  text-align: justify;
+}
+.slab {
+  line-height: 2em;
+}
+h3 {
+  font-family: "Gill Sans", 'Lato', Helvetica, sans-serif;
+  color: #0a2163;
+  margin-bottom: 20px;
+}
+h3:nth-of-type(2) {
+  margin-top: 30px;
+}
+#slider-holder {
+  position: relative;
+  top: 3%;
+  left: 15%;
+  width: 80%;
+  height: 95%;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: auto;
+}
+#slider {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+}
+.fa-linkedin {
+  background-color: #0077B5;
+  color: #efefed;
+  padding: 3px;
+  border-radius: 2px;
+  vertical-align: text-bottom;
 }
 /* front page
   --------------------------------------------- */
@@ -404,9 +442,26 @@ a {
 }
 /* about page
   --------------------------------------------- */
-#portrait {
+.page.about #portrait {
   border-radius: 20px;
-  width: 70%;
+  width: 90%;
+}
+.page.about #testimonials .carousel-caption {
+  position: static;
+  padding: 20px;
+  opacity: 0.7;
+}
+.page.about #testimonials .carousel-caption .quote {
+  padding: 10px 20px 10px 20px;
+  background-color: #0a2163;
+  color: #efefed;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-style: italic;
+}
+.page.about #testimonials .carousel-caption .person {
+  color: #0a2163;
+  text-shadow: none;
 }
 /* resources page
   --------------------------------------------- */
