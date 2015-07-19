@@ -1,6 +1,14 @@
-<div class = "container page">
+<div class = "container page resources">
 	<h3> Resources </h3>
 	<p class = "slab"> Want to explore further? Here are some resources to get you started. </p>
+
+	<table class = "links">
+		<tr>
+			<td class = "page-pos-link slab">LINKS</td>
+			<td class = "page-pos-link slab">TOOLS</td>
+			<td class = "page-pos-link slab">ARTICLES</td>
+		</tr>
+	</table>
 
 	<ul id = "file-list">
 		<li>

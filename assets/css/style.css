@@ -250,16 +250,17 @@ a {
   color: #a4d2f4;
 }
 .footer button {
+  font-family: 'Source Sans Pro', sans-serif;
   margin-top: -20px;
   padding: 5px 10px 5px 10px;
-  font-size: 18px;
+  font-size: 16px;
 }
 .footer .row > div.col-md-4 {
   text-align: center;
 }
 .footer #copyright {
   font-weight: 100;
-  font-size: 12px;
+  font-size: 14px;
   margin-top: 10px;
 }
 /* general
@@ -443,6 +444,9 @@ h3:nth-of-type(2) {
 }
 /* about page
   --------------------------------------------- */
+.page.about .row div:nth-of-type(2) {
+  margin-top: 30px;
+}
 .page.about #portrait {
   border-radius: 20px;
   width: 90%;
@@ -452,6 +456,9 @@ h3:nth-of-type(2) {
   color: #a4d2f4;
   font-size: 2em;
   line-height: 3em;
+}
+.page.about #testimonials {
+  min-height: 300px;
 }
 .page.about #testimonials .carousel-caption {
   position: static;
@@ -475,29 +482,47 @@ h3:nth-of-type(2) {
 }
 /* resources page
   --------------------------------------------- */
-#file-list {
+.resources.page table.links {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 30px 0px 30px 0px;
+}
+.resources.page table.links td {
+  width: 30%;
+  padding: 10px 10px 10px 10px;
+  border-left: 1px solid #0a2163;
+  border-right: 1px solid #0a2163;
+  text-align: center;
+}
+.resources.page table.links td:hover {
+  cursor: pointer;
+  background-color: #0a2163;
+  color: #efefed;
+}
+.resources.page #file-list {
   margin-top: 20px;
   border-top: 1px solid #0a2163;
 }
-#file-list li {
+.resources.page #file-list li {
   border-bottom: 1px solid #0a2163;
   margin-bottom: 5px;
   padding: 20px;
 }
-#file-list li h4 {
+.resources.page #file-list li h4 {
   margin-bottom: 5px;
 }
-#file-list li .flex3 {
+.resources.page #file-list li .flex3 {
   text-align: justify;
 }
-#file-list li .link-holder {
+.resources.page #file-list li .link-holder {
   position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;
   padding: 10px;
 }
-#file-list li .link-holder .download-button {
+.resources.page #file-list li .link-holder .download-button {
+  float: 'Source Sans Pro', sans-serif;
   cursor: pointer;
   background-color: #0a2163;
   color: #efefed;
@@ -506,7 +531,7 @@ h3:nth-of-type(2) {
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
 }
-#file-list li .link-holder .download-button:hover {
+.resources.page #file-list li .link-holder .download-button:hover {
   background-color: #a4d2f4;
   text-decoration: none;
 }
@@ -516,7 +541,11 @@ h3:nth-of-type(2) {
   margin-top: 30px;
 }
 #contact-info li {
-  padding: 10px;
+  padding: 8px;
+}
+#contact-info li span,
+#contact-info li i {
+  margin-right: 10px;
 }
 #contact-form #errors {
   width: 400px;

@@ -239,16 +239,17 @@ a {
         }
     }
     button {
+      font-family: @readingFont;
       margin-top: -20px;
       padding: 5px 10px 5px 10px;
-      font-size: 18px;
+      font-size: 16px;
     }
     .row > div.col-md-4 {
       text-align: center;
     }
     #copyright {
       font-weight: 100;
-      font-size: 12px;
+      font-size: 14px;
       margin-top: 10px;
     }
 }
@@ -467,7 +468,8 @@ color: white;
 
 .page.about{
 
-  .row div:first-of-type{
+  .row div:nth-of-type(2){
+    margin-top: 30px;
   }
 
   #portrait{
@@ -483,6 +485,9 @@ color: white;
 
 
   #testimonials{
+
+    min-height: 300px;
+
     .item{
 
     }
@@ -512,41 +517,66 @@ color: white;
 }
   /* resources page
   --------------------------------------------- */
-#file-list{
-  margin-top: 20px;
-  border-top: @border;
-  li{
-    border-bottom: @border;
-    margin-bottom: 5px;
-    padding: 20px;
-    h4{
-      margin-bottom: 5px;
-    }
-    .flex3 {
-      text-align: justify;
-    }
-    .link-holder{
-      position:absolute;
-      bottom:0;
-      width: 100%;
-      text-align: center;
-      padding: 10px;
-      .download-button{
-        cursor: pointer;
-        background-color: @navy;
-        color: @white;
-        border-radius: 10px;
-        padding: 5px 10px 5px 10px;
-        -webkit-transition: background-color .3s;
-        transition: background-color .3s;
+.resources.page {
 
+
+  table.links{
+    border-collapse: collapse;
+    width: 100%;
+    margin: 30px 0px 30px 0px;
+
+      td{
+        width: 30%;
+        padding: 10px 10px 10px 10px;
+        border-left: @border;
+        border-right: @border;
+        text-align: center;
         &:hover{
-          background-color: @lightblue;
-          text-decoration: none;
+          cursor: pointer;
+          background-color: @navy;
+          color: @white;
         }
+      }
+  }
 
+  #file-list{
+    margin-top: 20px;
+    border-top: @border;
+    li{
+      border-bottom: @border;
+      margin-bottom: 5px;
+      padding: 20px;
+      h4{
+        margin-bottom: 5px;
+      }
+      .flex3 {
+        text-align: justify;
+      }
+      .link-holder{
+        position:absolute;
+        bottom:0;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        .download-button{
+          float: @readingFont;
+          cursor: pointer;
+          background-color: @navy;
+          color: @white;
+          border-radius: 10px;
+          padding: 5px 10px 5px 10px;
+          -webkit-transition: background-color .3s;
+          transition: background-color .3s;
+
+          &:hover{
+            background-color: @lightblue;
+            text-decoration: none;
+          }
+
+        }
       }
     }
+
   }
 
 }
@@ -557,7 +587,10 @@ color: white;
 #contact-info{
   margin-top: 30px;
   li{
-    padding: 10px;
+    padding: 8px;
+    span, i {
+      margin-right: 10px;
+    }
   }
 }
 
