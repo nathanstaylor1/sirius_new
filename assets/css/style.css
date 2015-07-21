@@ -482,6 +482,9 @@ h3:nth-of-type(2) {
 }
 /* resources page
   --------------------------------------------- */
+.no-js .resource-list {
+  display: static;
+}
 .resources.page table.links {
   border-collapse: collapse;
   width: 100%;
@@ -499,29 +502,33 @@ h3:nth-of-type(2) {
   background-color: #0a2163;
   color: #efefed;
 }
-.resources.page #file-list {
+.resources.page .resource-list {
   margin-top: 20px;
   border-top: 1px solid #0a2163;
+  display: none;
 }
-.resources.page #file-list li {
+.resources.page .resource-list.active {
+  display: block;
+}
+.resources.page .resource-list li {
   border-bottom: 1px solid #0a2163;
   margin-bottom: 5px;
   padding: 20px;
 }
-.resources.page #file-list li h4 {
+.resources.page .resource-list li h4 {
   margin-bottom: 5px;
 }
-.resources.page #file-list li .flex3 {
+.resources.page .resource-list li .flex3 {
   text-align: justify;
 }
-.resources.page #file-list li .link-holder {
+.resources.page .resource-list li .link-holder {
   position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;
   padding: 10px;
 }
-.resources.page #file-list li .link-holder .download-button {
+.resources.page .resource-list li .link-holder .download-button {
   float: 'Source Sans Pro', sans-serif;
   cursor: pointer;
   background-color: #0a2163;
@@ -531,7 +538,7 @@ h3:nth-of-type(2) {
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
 }
-.resources.page #file-list li .link-holder .download-button:hover {
+.resources.page .resource-list li .link-holder .download-button:hover {
   background-color: #a4d2f4;
   text-decoration: none;
 }

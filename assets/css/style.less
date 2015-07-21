@@ -517,8 +517,11 @@ color: white;
 }
   /* resources page
   --------------------------------------------- */
-.resources.page {
+.no-js .resource-list {
+  display: static;
+}
 
+.resources.page {
 
   table.links{
     border-collapse: collapse;
@@ -539,9 +542,13 @@ color: white;
       }
   }
 
-  #file-list{
+  .resource-list{
     margin-top: 20px;
     border-top: @border;
+    display: none;
+    &.active{
+      display: block;
+    }
     li{
       border-bottom: @border;
       margin-bottom: 5px;

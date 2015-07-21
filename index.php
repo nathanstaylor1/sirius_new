@@ -83,6 +83,14 @@ post('/contact/mail', function () {
 	}
 });
 
+// resources admin 
+
+get('/resources/admin', function () {	render('resources_admin', array('title' => "Edit resources"));});
+get('/resources/admin/new', function () {	render('res_new', array('title' => "Add resources"));});
+get('/resources/admin/edit', function () {	render('res_edit', array('title' => "Edit resources"));});
+get('/resources/admin/delete', function () {	render('res_delete', array('title' => "Delete resources"));});
+
+
 
 get('.*',function(){
 	error(404, render('404'));
