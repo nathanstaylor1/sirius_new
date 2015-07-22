@@ -173,8 +173,8 @@ ol {
   list-style-type: none;
 }
 a {
-  -webkit-transition: color .2s;
-  transition: color .2s;
+  -webkit-transition: color .3s;
+  transition: color .3s;
 }
 /* layout 
   --------------------------------------------- */
@@ -496,6 +496,22 @@ h3:nth-of-type(2) {
   border-left: 1px solid #0a2163;
   border-right: 1px solid #0a2163;
   text-align: center;
+  overflow: hidden;
+  -webkit-transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
+}
+.resources.page table.links td a {
+  display: block;
+  margin: -10em;
+  padding: 10em;
+  color: #0a2163;
+}
+.resources.page table.links td a:hover {
+  color: #efefed;
+  text-decoration: none;
+}
+.resources.page table.links td.color {
+  background-color: #a4d2f4;
 }
 .resources.page table.links td:hover {
   cursor: pointer;
@@ -507,6 +523,10 @@ h3:nth-of-type(2) {
   border-top: 1px solid #0a2163;
   display: none;
 }
+.resources.page .resource-list form h3,
+.resources.page .resource-list form td {
+  padding: 10px;
+}
 .resources.page .resource-list.active {
   display: block;
 }
@@ -514,6 +534,10 @@ h3:nth-of-type(2) {
   border-bottom: 1px solid #0a2163;
   margin-bottom: 5px;
   padding: 20px;
+}
+.resources.page .resource-list li .row {
+  -webkit-transition: height .3s;
+  transition: height .3s;
 }
 .resources.page .resource-list li h4 {
   margin-bottom: 5px;
@@ -528,7 +552,8 @@ h3:nth-of-type(2) {
   text-align: center;
   padding: 10px;
 }
-.resources.page .resource-list li .link-holder .download-button {
+.resources.page .resource-list li .link-holder .download-button,
+.resources.page .resource-list li .link-holder .edit-button {
   float: 'Source Sans Pro', sans-serif;
   cursor: pointer;
   background-color: #0a2163;
@@ -538,9 +563,16 @@ h3:nth-of-type(2) {
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
 }
-.resources.page .resource-list li .link-holder .download-button:hover {
+.resources.page .resource-list li .link-holder .download-button:hover,
+.resources.page .resource-list li .link-holder .edit-button:hover {
   background-color: #a4d2f4;
   text-decoration: none;
+}
+.resources.page .resource-list .hideable {
+  display: none;
+}
+.resources.page .resource-list .hideable.show {
+  display: block;
 }
 /* contact page
   --------------------------------------------- */

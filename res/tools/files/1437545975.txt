@@ -1,0 +1,12 @@
+-- mobile development:
+	bootstrap
+
+-- database:
+	mySQL
+
+-- server side:
+	PHP
+
+-- JS libraries:
+	angular
+

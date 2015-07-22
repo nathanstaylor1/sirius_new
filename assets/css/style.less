@@ -158,8 +158,8 @@ ul, ol {
 }
 
 a {
-  -webkit-transition: color .2s;
-  transition: color .2s;
+  -webkit-transition: color .3s;
+  transition: color .3s;
 }
 
 
@@ -534,6 +534,22 @@ color: white;
         border-left: @border;
         border-right: @border;
         text-align: center;
+        overflow: hidden;
+        -webkit-transition: color .3s, background-color 0.3s ;
+        transition: color .3s, background-color 0.3s;
+        a {
+          display: block;
+          margin: -10em;
+          padding: 10em;
+          color: @navy;
+          &:hover{
+            color: @white;
+            text-decoration: none;
+          }
+        }
+        &.color{
+          background-color: @lightblue;
+        }
         &:hover{
           cursor: pointer;
           background-color: @navy;
@@ -546,6 +562,11 @@ color: white;
     margin-top: 20px;
     border-top: @border;
     display: none;
+    form {
+      h3, td{
+        padding: 10px;
+      }
+    }
     &.active{
       display: block;
     }
@@ -565,7 +586,8 @@ color: white;
         width: 100%;
         text-align: center;
         padding: 10px;
-        .download-button{
+
+        .download-button, .edit-button{
           float: @readingFont;
           cursor: pointer;
           background-color: @navy;
@@ -581,6 +603,12 @@ color: white;
           }
 
         }
+      }
+    }
+    .hideable{
+      display: none;
+      &.show{
+        display: block;
       }
     }
 
