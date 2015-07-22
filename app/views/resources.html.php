@@ -1,62 +1,80 @@
 <div class = "container page resources">
 	<h3> Resources </h3>
+
 	<p class = "slab"> Want to explore further? Here are some resources to get you started. </p>
 
 	<table class = "links">
 		<tr>
-			<td class = "page-pos-link slab">LINKS</td>
-			<td class = "page-pos-link slab">TOOLS</td>
-			<td class = "page-pos-link slab">ARTICLES</td>
+			<td id = "display-btn-links" class = "slab">LINKS</td>
+			<td id = "display-btn-tools" class = "slab">TOOLS</td>
+			<td id = "display-btn-articles" class = "slab">ARTICLES</td>
 		</tr>
 	</table>
 
-	<ul id = "file-list">
+	<ul id = "link-list" class = "resource-list">
+
+	  <?php foreach($files['links'] as $name => $resource):?>
 		<li>
 			<div class = "container-fluid">
 				<div class = "row flexbox">
-					<div class = "col-md-10 flex3">
-						<h4>Title</h4>
-						<p class = "slab"> Description.. ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.  </p>
-					</div>
-					<div class = "col-md-2 flex1">
-						<div class = "link-holder">
-							<a class = "download-button"><span class = "glyphicon glyphicon-download"></span> Download</a>
-						</div>
+					<div class = "col-md-12 flex1">
+						<a href="http://<?php echo $resource["url"] ?>" target="_blank"><h4><?php echo $resource["title"]?></h4></a>
+						<p class = "slab"><?php echo $resource["description"]?></p>
 					</div>
 				</div>
 			</div>
 		</li>
+
+	  <?php endforeach;?>
+
+	</ul>
+
+
+	<ul id = "tool-list" class = "resource-list">
+
+		<?php foreach($files['tools'] as $name => $resource):?>
 		<li>
 			<div class = "container-fluid">
 				<div class = "row flexbox">
-					<div class = "col-md-10 flex3">
-						<h4>Title</h4>
-						<p class = "slab"> Description.. ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.  </p>
+					<div class = "col-md-12 flex3">
+						<h4><?php echo $resource["title"]?></h4>
+						<p class = "slab"><?php echo $resource["description"]?></p>
 					</div>
 					<div class = "col-md-2 flex1">
 						<div class = "link-holder">
-							<a class = "download-button"><span class = "glyphicon glyphicon-download"></span> Download</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</li>
-		<li>
-			<div class = "container-fluid">
-				<div class = "row flexbox">
-					<div class = "col-md-10 flex3">
-						<h4>Title</h4>
-						<p class = "slab"> Description.. ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.  </p>
-					</div>
-					<div class = "col-md-2 flex1">
-						<div class = "link-holder">
-							<a class = "download-button"><span class = "glyphicon glyphicon-download"></span> Download</a>
+							<a href="<?php echo site_url() . $resource["url"] ?>" class = "download-button" download = "<?php echo str_replace(" ", "_", trim($resource["title"])) . '.' . $resource["ext"] ?>"><span class = "glyphicon glyphicon-download"></span>Download</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</li>
 
+	  <?php endforeach;?>
+
 	</ul>
+
+	<ul id = "article-list" class = "resource-list">
+
+		<?php foreach($files['articles'] as $name => $resource):?>
+		<li>
+			<div class = "container-fluid">
+				<div class = "row flexbox">
+					<div class = "col-md-12 flex3">
+						<h4><?php echo $resource["title"]?></h4>
+						<p class = "slab"><?php echo $resource["description"]?></p>
+					</div>
+					<div class = "col-md-2 flex1">
+						<div class = "link-holder">
+							<a href="<?php echo site_url() . $resource["url"] ?>" class = "download-button" download = "<?php echo str_replace(" ", "_", trim($resource["title"])) . '.' . $resource["ext"] ?>"><span class = "glyphicon glyphicon-download"></span>Download</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li>
+
+	  <?php endforeach;?>
+
+	</ul>
+
 
 </div>

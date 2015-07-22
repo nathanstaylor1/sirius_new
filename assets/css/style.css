@@ -173,8 +173,8 @@ ol {
   list-style-type: none;
 }
 a {
-  -webkit-transition: color .2s;
-  transition: color .2s;
+  -webkit-transition: color .3s;
+  transition: color .3s;
 }
 /* layout 
   --------------------------------------------- */
@@ -227,7 +227,7 @@ a {
   color: #EFEFED;
   text-align: center;
   font-family: "Gill Sans", 'Lato', Helvetica, sans-serif;
-  border-top: 1px solid #0a2163;
+  border-top: 1px solid #22398a;
   font-size: 18px;
   font-weight: 300;
 }
@@ -304,7 +304,7 @@ a {
 }
 h3 {
   font-family: "Gill Sans", 'Lato', Helvetica, sans-serif;
-  color: #0a2163;
+  color: #22398a;
   margin-bottom: 20px;
 }
 h3:nth-of-type(2) {
@@ -406,7 +406,7 @@ h3:nth-of-type(2) {
   margin-bottom: 50px;
 }
 .icons a {
-  color: #0a2163;
+  color: #22398a;
 }
 .icons a:hover {
   text-decoration: none;
@@ -467,7 +467,7 @@ h3:nth-of-type(2) {
 }
 .page.about #testimonials .carousel-caption .quote {
   padding: 10px 20px 10px 20px;
-  background-color: #0a2163;
+  background-color: #22398a;
   color: #efefed;
   margin-bottom: 10px;
   border-radius: 10px;
@@ -476,12 +476,15 @@ h3:nth-of-type(2) {
   line-height: 1.8em;
 }
 .page.about #testimonials .carousel-caption .person {
-  color: #0a2163;
+  color: #22398a;
   text-shadow: none;
   font-family: 'Source Sans Pro', sans-serif;
 }
 /* resources page
   --------------------------------------------- */
+.no-js .resource-list {
+  display: static;
+}
 .resources.page table.links {
   border-collapse: collapse;
   width: 100%;
@@ -490,50 +493,104 @@ h3:nth-of-type(2) {
 .resources.page table.links td {
   width: 30%;
   padding: 10px 10px 10px 10px;
-  border-left: 1px solid #0a2163;
-  border-right: 1px solid #0a2163;
+  border-left: 1px solid #22398a;
+  border-right: 1px solid #22398a;
   text-align: center;
+  overflow: hidden;
+  -webkit-transition: color 0.3s, background-color 0.3s;
+  transition: color 0.3s, background-color 0.3s;
+}
+.resources.page table.links td a {
+  display: block;
+  margin: -10em;
+  padding: 10em;
+  color: #22398a;
+}
+.resources.page table.links td a:hover {
+  color: #efefed;
+  text-decoration: none;
+}
+.resources.page table.links td.color {
+  background-color: #a4d2f4;
 }
 .resources.page table.links td:hover {
   cursor: pointer;
-  background-color: #0a2163;
+  background-color: #22398a;
   color: #efefed;
 }
-.resources.page #file-list {
-  margin-top: 20px;
-  border-top: 1px solid #0a2163;
+.resources.page .message {
+  color: #FFFFFF;
+  padding: 20px;
+  text-align: center;
+  display: block;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 10px;
 }
-.resources.page #file-list li {
-  border-bottom: 1px solid #0a2163;
+.resources.page .message.error {
+  background-color: #ff5533;
+}
+.resources.page .message.success {
+  background-color: #49a5e9;
+}
+.resources.page form h3,
+.resources.page form td {
+  padding: 10px;
+}
+.resources.page .download-button,
+.resources.page .edit-button,
+.resources.page .hide-button,
+.resources.page .submit-button,
+.resources.page .delete-button {
+  font: 'Source Sans Pro', sans-serif;
+  cursor: pointer;
+  background-color: #22398a;
+  color: #efefed;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  border: none;
+}
+.resources.page .download-button:hover,
+.resources.page .edit-button:hover,
+.resources.page .hide-button:hover,
+.resources.page .submit-button:hover,
+.resources.page .delete-button:hover {
+  background-color: #a4d2f4;
+  text-decoration: none;
+}
+.resources.page .resource-list {
+  margin-top: 20px;
+  border-top: 1px solid #22398a;
+  display: none;
+}
+.resources.page .resource-list.active {
+  display: block;
+}
+.resources.page .resource-list li {
+  border-bottom: 1px solid #22398a;
   margin-bottom: 5px;
   padding: 20px;
 }
-.resources.page #file-list li h4 {
+.resources.page .resource-list li h4 {
   margin-bottom: 5px;
 }
-.resources.page #file-list li .flex3 {
+.resources.page .resource-list li .flex3 {
   text-align: justify;
 }
-.resources.page #file-list li .link-holder {
+.resources.page .resource-list li .link-holder {
   position: absolute;
   bottom: 0;
   width: 100%;
   text-align: center;
   padding: 10px;
 }
-.resources.page #file-list li .link-holder .download-button {
-  float: 'Source Sans Pro', sans-serif;
-  cursor: pointer;
-  background-color: #0a2163;
-  color: #efefed;
-  border-radius: 10px;
-  padding: 5px 10px 5px 10px;
-  -webkit-transition: background-color 0.3s;
-  transition: background-color 0.3s;
+.resources.page .resource-list .hideable {
+  display: none;
 }
-.resources.page #file-list li .link-holder .download-button:hover {
-  background-color: #a4d2f4;
-  text-decoration: none;
+.resources.page .resource-list .hideable.show {
+  display: block;
 }
 /* contact page
   --------------------------------------------- */
@@ -557,7 +614,7 @@ h3:nth-of-type(2) {
 #contact-form input,
 #contact-form textarea {
   width: 100%;
-  border: 1px solid #0a2163;
+  border: 1px solid #22398a;
   padding: 4px 10px 4px 10px;
 }
 /* Media Queries
