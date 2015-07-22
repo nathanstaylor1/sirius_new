@@ -17,7 +17,7 @@
 		<li>
 			<div class = "container-fluid">
 				<div class = "row flexbox">
-					<div class = "col-md-12 flex1">
+					<div class = "col-md-12 flex3">
 						<a href="http://<?php echo $resource["url"] ?>" target="_blank"><h4><?php echo $resource["title"]?></h4></a>
 						<p class = "slab"><?php echo $resource["description"]?></p>
 					</div>
@@ -35,12 +35,12 @@
 		<?php foreach($files['tools'] as $name => $resource):?>
 		<li>
 			<div class = "container-fluid">
-				<div class = "row flexbox">
-					<div class = "col-md-12 flex3">
+				<div class = "flexbox">
+					<div class = "flex3">
 						<h4><?php echo $resource["title"]?></h4>
 						<p class = "slab"><?php echo $resource["description"]?></p>
 					</div>
-					<div class = "col-md-2 flex1">
+					<div class = "flex1">
 						<div class = "link-holder">
 							<a href="<?php echo site_url() . $resource["url"] ?>" class = "download-button" download = "<?php echo str_replace(" ", "_", trim($resource["title"])) . '.' . $resource["ext"] ?>"><span class = "glyphicon glyphicon-download"></span>Download</a>
 						</div>
@@ -59,7 +59,7 @@
 		<li>
 			<div class = "container-fluid">
 				<div class = "row flexbox">
-					<div class = "col-md-12 flex3">
+					<div class = "col-md-10 flex3">
 						<h4><?php echo $resource["title"]?></h4>
 						<p class = "slab"><?php echo $resource["description"]?></p>
 					</div>

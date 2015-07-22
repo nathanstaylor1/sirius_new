@@ -74,7 +74,7 @@
               <div class = "col-xs-4">
                 <a href = "<?php echo site_url() ?>companies">
                   <div class = "three-icon company"></div>
-                  <h4>Comanies</h4>
+                  <h4>Companies</h4>
                 </a>
               </div>
               <div class = "col-xs-4">

@@ -16,9 +16,9 @@
 
 			<h3> About Sirius Business</h3>
 			<p class = "slab"> 
-				Whether we are working with an individual, a board of directors, or a whole company, our approach is the same. We meet every client with unconditional acceptance and positive regard, an unshakeable belief in their capabilities to find their own solutions, and a commitment to helping them create their ideal reality and achieve their most ambitious goals. Our values of professionalism, respect, and excellence enable us to create greater alignment for our clients between their ambitions and their realities.  <br><br>
+				Whether we are working with an individual, a board of directors, or a whole company, our approach is the same. We meet every client with unconditional acceptance and positive regard, an unshakeable belief in their capabilities to find their own solutions, and a commitment to helping them create their ideal reality and achieve their most ambitious goals. Our values of professionalism, respect, and excellence enable us to create greater alignment for our clients between their aspirations and their realities.  <br><br>
 
-				Our clients are often deep thinkers who care about making a difference in the world through their work, and who believe that living an intentional, purpose-filled life is the most significant achievement they can attain. We encourage each person we coach or consult with to step up to their next level of performance, uncovering aspects of their own greatness that may have gone unrealized.  <br><br>
+				Our clients are often deep thinkers who care about making a difference in the world through their work, and who seek to live an intentional, purpose-filled life. We encourage each person we coach or consult with to step up to their next level of performance, uncovering aspects of their own greatness that may have gone unrealised.   <br><br>
 
 				Our goal is to assist clients in reaching a perfect harmony between their values, desires, and talents. We believe that in this state of being, a person is able to become fully empowered and fulfilled their work, which in turn empowers those around them. Through serving our clients in this way, we are creating a better world in which to do business and life together.  <br><br>
 
@@ -43,13 +43,6 @@
 				<div class="carousel-inner">
 
 					<div class="item active">
-					  <div class="carousel-caption">
-						<p class = "quote">“Dianne established a positive and productive working environment while assisting me in planning my career direction, improving my presentation skills and focus, and enhancing my employability.”</p>
-						<p class = "person"> Bar, Senior Design Engineer </p>
-					  </div>
-					</div>
-
-					<div class="item">
 					  <div class="carousel-caption">
 						<p class = "quote">“Dianne helped me chart out what is important to me in my life, exploring what makes a successful leader and coaching me down that path.”</p>
 						<p class = "person"> Ros, Volunteer Coordinator at Community Organisation </p>

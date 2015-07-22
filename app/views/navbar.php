@@ -16,7 +16,7 @@
 	          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services
 	          <span class="caret"></span></a>
 	          <ul class="dropdown-menu">
-	            <li><a href="<?php echo site_url() ?>individuals/">Individual</a></li>
+	            <li><a href="<?php echo site_url() ?>individuals/">Individuals</a></li>
 	            <li><a href="<?php echo site_url() ?>companies/">Companies</a></li>
 	            <li><a href="<?php echo site_url() ?>boards/">Boards</a></li>
 	          </ul>

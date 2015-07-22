@@ -72,11 +72,13 @@ body  * {
   height: 500px; /* fallback for older browsers */
   height: 100vh;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: scroll; 
   -webkit-perspective: unit(@perspective, px);
   perspective: unit(@perspective, px);
   -webkit-perspective-origin-x: 100%;
   perspective-origin-x: 100%;
+
+  -webkit-overflow-scrolling: touch;
 }
 
 .parallax__group {
@@ -593,6 +595,8 @@ color: white;
     -webkit-transition: background-color .3s;
     transition: background-color .3s;
     border: none;
+    overflow: hidden;
+    white-space: nowrap;
 
     &:hover{
       background-color: @lightblue;
@@ -615,14 +619,14 @@ color: white;
         margin-bottom: 5px;
       }
       .flex3 {
-        text-align: justify;
+        p{
+          text-align: justify;
+        }
+        min-width: 230px;
       }
-      .link-holder{
-        position:absolute;
-        bottom:0;
-        width: 100%;
+      .link-holder{        
         text-align: center;
-        padding: 10px;
+        padding: 15px;
 
       }
     }
@@ -668,11 +672,15 @@ color: white;
 }
 
 
-
   /* Media Queries
   --------------------------------------------- */
 
 @media screen and (max-width: 1000px) {
+    
+    .page {
+      padding: 10vh 5vw 10vh 5vw;
+    }
+
     .navbar {
       .navbar-brand > p {
         font-size: 22px;
@@ -732,6 +740,8 @@ color: white;
 }
 
 @media screen and (max-width: 600px) {
+    
+
     .navbar {
       .navbar-brand > p {
         font-size: 20px;
@@ -787,5 +797,18 @@ color: white;
           font-size: 12px;
         }
     }
+   
+    .page {
+      padding: 10vh 10px 10vh 10px;
+    }
+
+    .slab{
+      line-height: 2em;
+      font-family: @readingFont;
+      font-size: 12px;
+    }
+
+
 }
+
 

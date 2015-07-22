@@ -551,6 +551,8 @@ h3:nth-of-type(2) {
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
   border: none;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .resources.page .download-button:hover,
 .resources.page .edit-button:hover,
@@ -577,14 +579,14 @@ h3:nth-of-type(2) {
   margin-bottom: 5px;
 }
 .resources.page .resource-list li .flex3 {
+  min-width: 230px;
+}
+.resources.page .resource-list li .flex3 p {
   text-align: justify;
 }
 .resources.page .resource-list li .link-holder {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
 }
 .resources.page .resource-list .hideable {
   display: none;
@@ -620,6 +622,9 @@ h3:nth-of-type(2) {
 /* Media Queries
   --------------------------------------------- */
 @media screen and (max-width: 1000px) {
+  .page {
+    padding: 10vh 5vw 10vh 5vw;
+  }
   .navbar .navbar-brand > p {
     font-size: 22px;
   }
@@ -712,6 +717,14 @@ h3:nth-of-type(2) {
     margin-top: 15px;
   }
   .icons h4 {
+    font-size: 12px;
+  }
+  .page {
+    padding: 10vh 10px 10vh 10px;
+  }
+  .slab {
+    line-height: 2em;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 12px;
   }
 }
