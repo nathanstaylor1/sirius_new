@@ -37,7 +37,7 @@ $("#display-btn-articles").on("click",function(){
 	$("#article-list").addClass("active");
 });
 
-$(".edit-button").on("click",function(){
+$(".edit-button, .hide-button").on("click",function(){
 
 	var identifier = $(this).attr("id")
 

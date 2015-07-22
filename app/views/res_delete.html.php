@@ -1,6 +1,9 @@
 <div class = "container page resources">
-	<?php if (isset($message)){ ?>
-		<p class = "error message"> <?php echo $message ?>
+	<?php if ($error != ""){ ?>
+		<p class = "error message"> <?php echo $error ?>
+	<? }; ?>
+	<?php if ($message != ""){ ?>
+		<p class = "success message"> <?php echo $message ?>
 	<? }; ?>
 	<h3> Edit Resources: </h3>
 
@@ -39,7 +42,7 @@
 							   <input type="hidden" name="title" value = "<?php echo $resource["title"] ?>" >								
 							   <input type="hidden" name="docspath" value = "<?php echo $resource["docspath"] ?>" >
 							   <input type="hidden" name="filespath" value = "<?php echo $resource["filespath"] ?>" >
-							   <input class = "submit" type="submit" value = "Delete" >
+							   <button class = "delete-button" type="submit"><span class = "glyphicon glyphicon-remove"></span> Delete</button>
 							</form>
 						</div>
 					</div>
@@ -68,7 +71,7 @@
 							   <input type="hidden" name="title" value = "<?php echo $resource["title"] ?>" >
 							   <input type="hidden" name="docspath" value = "<?php echo $resource["docspath"] ?>" >
 							   <input type="hidden" name="filespath" value = "<?php echo $resource["filespath"] ?>" >
-							   <input class = "submit" type="submit" value = "Delete" >
+							   <button class = "delete-button" type="submit"><span class = "glyphicon glyphicon-remove"></span> Delete</button>
 							</form>
 						</div>
 					</div>
@@ -96,7 +99,7 @@
 							   <input type="hidden" name="title" value = "<?php echo $resource["title"] ?>" >								
 							   <input type="hidden" name="docspath" value = "<?php echo $resource["docspath"] ?>" >
 							   <input type="hidden" name="filespath" value = "<?php echo $resource["filespath"] ?>" >
-							   <input class = "submit" type="submit" value = "Delete" >
+							   <button class = "delete-button" type="submit"><span class = "glyphicon glyphicon-remove"></span> Delete</button>
 							</form>
 						</div>
 					</div>

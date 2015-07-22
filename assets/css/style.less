@@ -33,7 +33,7 @@ body  * {
     @black: #353040;
 
     @orange: #FFAA99;
-    @navy:  #0A2163;
+    @navy:  #22398A;
     @lightblue: #A4D2F4;
     @purple: #7E5EB1;
 
@@ -558,15 +558,52 @@ color: white;
       }
   }
 
-  .resource-list{
-    margin-top: 20px;
-    border-top: @border;
-    display: none;
-    form {
+  .message{
+
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 10px;
+
+    &.error{
+      background-color: darken(@orange, 20%);
+    }
+    &.success{
+      background-color: darken(@lightblue, 20%);
+    }
+
+  }
+
+  form {
       h3, td{
         padding: 10px;
       }
     }
+
+  .download-button, .edit-button, .hide-button, .submit-button, .delete-button{
+    font: @readingFont;
+    cursor: pointer;
+    background-color: @navy;
+    color: @white;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+    border: none;
+
+    &:hover{
+      background-color: @lightblue;
+      text-decoration: none;
+    }
+  }
+
+  .resource-list{
+    margin-top: 20px;
+    border-top: @border;
+    display: none;
     &.active{
       display: block;
     }
@@ -587,22 +624,6 @@ color: white;
         text-align: center;
         padding: 10px;
 
-        .download-button, .edit-button{
-          float: @readingFont;
-          cursor: pointer;
-          background-color: @navy;
-          color: @white;
-          border-radius: 10px;
-          padding: 5px 10px 5px 10px;
-          -webkit-transition: background-color .3s;
-          transition: background-color .3s;
-
-          &:hover{
-            background-color: @lightblue;
-            text-decoration: none;
-          }
-
-        }
       }
     }
     .hideable{

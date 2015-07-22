@@ -97,3 +97,44 @@ function test_input($data) {
   $data = stripslashes($data);
   return $data;
 }
+
+//check login
+function check_login($username, $password){
+
+  $validusername = "sirius";
+  $validpassword = "business";
+
+  if ($username == $validusername && $password == $validpassword) return true;
+
+  return false;
+
+};
+
+
+
+// create a new session for authorized users
+function create_session(){
+
+  session_start();
+  $_SESSION["authorized"] = true;
+
+  return false;
+
+}
+
+
+// check for an authorized session
+function check_session(){
+
+  session_start();
+  if (isset($_SESSION["authorized"])){
+	  return $_SESSION["authorized"];
+  }
+
+  return false;
+
+}
+
+
+
+
